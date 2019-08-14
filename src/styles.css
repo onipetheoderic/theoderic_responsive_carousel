@@ -6,3 +6,57 @@
   border: 2px solid #000;
   font-size: 2em;
 }
+
+
+.container {
+  position: relative;
+  
+}
+
+/* Bottom right text */
+.textblock {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+.bottommiddle {
+  position: absolute;
+  bottom: 200px;
+  right: 16px;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari 3-8 */
+  transform: rotate(90deg);
+  font-size: 20px;
+  letter-spacing: 0.34em;
+ 
+}
+.centeredSmall {
+position: absolute;
+  top: 50%;
+  font-size: 15px;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.centered {
+  position: absolute;
+  top: 40%;
+  font-size: 30px;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}

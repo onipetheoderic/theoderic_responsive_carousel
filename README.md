@@ -8,6 +8,7 @@
 
 ```bash
 npm install --save theoderic_responsive_carousel
+yarn add theoderic_responsive_carousel
 ```
 
 ## Usage
@@ -15,16 +16,44 @@ npm install --save theoderic_responsive_carousel
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'theoderic_responsive_carousel'
+import ExampleComponent from 'theoderic_responsive_carousel'
 
-class Example extends Component {
+export default class App extends Component {
   render () {
     return (
-      <MyComponent />
+      <div>
+        <ExampleComponent duration={5000} bulletColor="white">
+        <div imageLink="https://placekitten.com/1000/700" alternateText="kitten" imageWidth="100%" imageHeight="400"  textBig="Welcome To my World" textSmall="This is the small text place holder" textBigColor='white' textBigFontSize={50} textSmallSize={20} textSmallColor="white"></div>
+        
+        <div imageLink="https://placekitten.com/1200/500" alternateText="kitten" imageWidth="100%" imageHeight="400"  textBig="Welcome To my World" textSmall="This is the small text place holder" textBigColor='white' textBigFontSize={50} textSmallSize={20} textSmallColor="white"></div>
+        
+        <div imageLink="https://placekitten.com/3200/800" alternateText="kitten" imageWidth="100%" imageHeight="400"  textBig="Welcome To my World" textSmall="This is the small text place holder" textBigColor='white' textBigFontSize={50} textSmallSize={20} textSmallColor="white"></div>
+        </ExampleComponent>
+      </div>
     )
   }
 }
+
 ```
+## PropTypes
+	General Properties = {
+		duration: PropTypes.number,
+		bulletColor: PropTypes.string
+	}
+	Div Properties = {
+	    imageLink: PropTypes.string,
+	    textBigFontSize: PropTypes.number,
+	    textBigColor: PropTypes.string,
+	    textBigBg: PropTypes.number,
+	    textBig: PropTypes.string,
+	    textSmall: PropTypes.string,
+	    textSmallBg: PropTypes.string,
+	    imageHeight: PropTypes.string,
+	    imageWidth: PropTypes.string,
+	    alternateText: PropTypes.string,
+	    textSmallSize: PropTypes.number,
+	    textSmallColor: PropTypes.string    
+	  }
 
 ## License
 
