@@ -60,3 +60,41 @@ position: absolute;
   left: 30%;
   transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 600px) {
+  .responsive_image {
+  	max-height: 120px;
+  	min-width: 100%;
+  }
+  .centered {
+  position: absolute;
+  top: 40%!important;
+  font-size: 13px!important;
+  padding-left: 30px!important;
+  text-align: center!important;
+  transform: translate(-50%, -50%);
+}
+.centeredSmall {
+  position: absolute!important;
+  top: 60%!important;
+  text-align: center!important;
+  font-size: 11px!important;
+  padding-left: 30px!important;
+  transform: translate(-50%, -50%);
+}
+.bottommiddle {
+  position: absolute;
+  top: 40%;
+  right: 5px;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari 3-8 */
+  transform: rotate(90deg);
+  font-size: 8px;
+  letter-spacing: 0.34em;
+ 
+}
+
+  .innerDiv {
+  	text-align: center;
+  }
+}

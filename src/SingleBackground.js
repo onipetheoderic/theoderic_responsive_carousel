@@ -25,8 +25,8 @@ export default class SingleBackground extends Component {
     const imageHeight = this.props.imageHeight
     return (
       <div className={styles.container}>
-     <img src={this.props.imageLink} alt={this.props.alternateText} width={this.props.imageWidth} height={this.props.imageHeight}/>
-        <div className={styles.centered} style={{fontWeight:'600', color:this.props.textBigColor, fontSize:this.props.textBigFontSize}}>{this.props.textBig}</div>
+     <img className={styles.responsive_image} src={this.props.imageLink} alt={this.props.alternateText} width={this.props.imageWidth} height={this.props.imageHeight}/>
+        <div style={{fontWeight:'600', color:this.props.textBigColor, fontSize:this.props.textBigFontSize}} className={styles.centered}>{this.props.textBig}</div>
 
         <div className={styles.centeredSmall} style={{color:this.props.textSmallColor, fontSize: this.props.textSmallSize}}>{this.props.textSmall}</div>
 
