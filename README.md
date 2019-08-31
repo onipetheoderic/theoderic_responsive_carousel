@@ -10,6 +10,9 @@
 npm install --save theoderic_responsive_carousel
 yarn add theoderic_responsive_carousel
 ```
+## Description
+A very responsive carousel designed by Theoderic Ohinoyi Onipe, Use it to your desire.
+
 
 ## Usage
 

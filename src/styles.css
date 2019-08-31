@@ -10,7 +10,7 @@
 
 .container {
   position: relative;
-  
+  display:block;
 }
 
 /* Bottom right text */
